@@ -7,7 +7,7 @@ import Filter from "./filter/Filter"
 import Contacts from "./contacts/Contacts"
 import {AppWrapper} from "./AppStyle";
 import LocalStorageHooks from "../Hooks/LocalStoregeHooks"
-// console.log ()
+
 const App = () => {
   
   const [contacts,setContacts] = LocalStorageHooks('contacts',[]);
