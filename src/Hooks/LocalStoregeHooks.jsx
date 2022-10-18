@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 
 const LocalStorageHoks = (key, defaultValue) =>{
 const[state,setState] = useState(() =>{
-   return JSON.parse(window.localStorage.getItem(key)|| defaultValue)
+   return JSON.parse(window.localStorage.getItem(key) ?? defaultValue)
 })
 
 useEffect(() => {
